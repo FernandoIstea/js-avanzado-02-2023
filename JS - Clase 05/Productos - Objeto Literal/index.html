@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Objeto Literal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/producto.js"></script>
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <h1>Producto</h1>
+        </div>
+    </header>
+    <main>
+        <div id="main">
+            <div class="fields">
+                <h2>Ingresa los datos solicitados</h2>
+                <input type="number" id="inputID" placeholder="ID (automático)" disabled>
+                <input type="text" id="inputNombre" placeholder="Ingrese el nombre del producto">
+                <input type="number" id="inputPrecio" placeholder="Precio" min="0">
+                <input type="number" id="inputStock" placeholder="Stock (unidades)" min="0">
+                <select id="selectCategoria">
+                    <option selected disabled value="...">...</option>
+                    <option value="Portátil">Portátil</option>
+                    <option value="Tablet">Tablet</option>
+                    <option value="Desktop">Desktop</option>
+                    <option value="Smartwatch">Smartwatch</option>
+                </select>    
+            </div>
+            <div class="div-centrar">
+                <button id="btnCalcular" class="button">Agregar</button>
+                <button id="btnAgregar" class="button-outline">Calcular</button>
+                <button id="btnLimpiarCampos" class="button-slategrey">Limpiar campos</button>
+            </div>
+            <div>
+                <p>Importe con IVA: <span id="precioIva">0</span></p>
+                <p>Punto de pedido: <span id="puntoPedido">0</span></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
