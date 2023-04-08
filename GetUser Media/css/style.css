@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css");
+
+* {
+    font-family:"Roboto", Arial, Helvetica, sans-serif;
+}
+
+html {
+    padding: 10px;
+}
+
+body {
+  background-color: rgb(126, 88, 161);
+  color: whitesmoke !important;
+}
+
+h1 {
+  /* color: black; */
+  font-weight: 700;
+}
+
+button:active {
+  background-color: black;
+}
+
+button[not]:active {
+  background-color: #9b4dca;
+}
+
+a {
+  color: whitesmoke;
+}
+
+a:hover {
+  font-weight: 400;
+  color: white;
+}
+
+video {
+  width: 100%;
+}
+
+div#video {
+  text-align: center;
+}
